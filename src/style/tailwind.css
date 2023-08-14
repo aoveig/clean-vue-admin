@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* 主题 */
+  .frame-bg {
+    @apply bg-white dark:bg-neutral-900;
+  }
+  .layout-bg {
+    @apply bg-[#f7f7f7] dark:bg-neutral-800;
+  }
+  .login-bg {
+    @apply bg-gradient-to-t from-[#f3e7e9] to-[#c0d3f1] dark:from-neutral-700 dark:to-neutral-900;
+  }
+  .hover-shadow {
+    @apply transition-shadow duration-500 hover:shadow-[0_20px_25px_-5px_#ddd] hover:dark:shadow-[0_20px_25px_-5px_#666];
+  }
+  .collapse-shadow {
+    @apply shadow-[0_0_10px_0px_#ddd] dark:shadow-[0_0_10px_0px_#666];
+  }
+  /* 其他 */
+}
